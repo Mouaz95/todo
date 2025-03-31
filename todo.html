@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="todo-container">
+        <div class="tasks-table">
+            <div class="todo-header">
+                <h2>My Todos</h2>
+                <button class="add circular" onclick="addTask()"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <!-- tasks -->
+             <div class="tasks">
+                <!-- task -->
+               
+             </div>
+             
+        </div>
+        <div class="adding-modal modal hidden">
+            <label for="title" >Add Task :</label>
+            <input type="text"placeholder="Add text here .." id="title" class="task-text">
+            <div class="close">x</div>
+            <button class="add-modal">confirm</button>
+        </div>
+
+        <div class="removing-modal modal hidden2">
+            <h1>Do You Sure .. want to remove ?</h1>
+            <div class="modal-actions">
+                <button class="cancel-delete">Cancel</button>
+                <button class="confirm-delete">yes</button>
+            </div>
+        </div>
+        <div class="update-modal  modal hidden3 ">
+            <label for="title" >update Task :</label>
+            <input type="text"placeholder="Add text here .." id="title" class="task-text-toupdate">
+            <div class="close">x</div>
+            <button class="confirm-update">confirm</button>
+        </div>
+    </div>
+
+   
+
+    <script src="todo.js"></script>
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>
